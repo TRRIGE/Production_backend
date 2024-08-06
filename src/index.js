@@ -6,9 +6,9 @@ connectDB()
     .then(() => {
         app.listen(process.env.PORT || 8000,
             () => {
-                console.log('Server is running on port 3000');
+                console.log('Server is running on port 8000');
             })
     }).catch((error) => {
-        console.log(`Error in connectoin with database: ${error.message}`)
+        console.log(`Error in connection with database: ${error.message}`)
         process.exit(1)
     })
